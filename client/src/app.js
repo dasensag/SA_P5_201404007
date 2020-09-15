@@ -36,6 +36,8 @@ app.get('/delivery/:orderId', (req, res) => {
     });
 })
 
-app.listen(port, () => {
+let server = app.listen(port, () => {
     log.info('Client API listening on port ', port);
 })
+
+module.exports  = server;

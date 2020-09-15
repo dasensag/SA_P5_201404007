@@ -4,7 +4,20 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sonar":  "node sonar-project.js",
+    "test":  "jest --coverage"
+  },
+  "jest": {
+      "testEnvironment":  "node",
+      "coveragePathIgnorePatterns": [
+          "/node_modules/"
+      ],
+      "testResultsProcessor":  "jest-sonar-reporter"
+  },
+  "jestSonar": {
+      "reportPath":  "coverage",
+      "reportFile":  "test-reporter.xml",
+      "indent":  4
   },
   "author": "",
   "license": "ISC",
@@ -12,11 +25,15 @@
     "axios": "^0.20.0",
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
+    "jest": "^26.4.2",
     "randomstring": "^1.1.5",
     "simple-node-logger": "^18.12.24"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
-    "gulp-zip": "^5.0.2"
+    "gulp-zip": "^5.0.2",
+    "jest-sonar-reporter": "^2.0.0",
+    "sonarqube-scanner": "^2.7.0",
+    "supertest": "^4.0.2"
   }
 }

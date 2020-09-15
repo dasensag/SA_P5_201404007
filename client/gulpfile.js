@@ -2,9 +2,9 @@ const gulp = require('gulp');
 const zip = require('gulp-zip');
 
 gulp.task('zipper', function(){
-    return gulp.src('./*')
+    return gulp.src('src/*')
         .pipe(zip('client.zip'))
-        .pipe(gulp.dest('../dist'));
+        .pipe(gulp.dest('dist'));
 });
 
 gulp.task('default', gulp.series('zipper'));

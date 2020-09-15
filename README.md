@@ -6,6 +6,10 @@ Service orchestration with a simple ESB.
 
 https://drive.google.com/file/d/1PcQWME38GsjrHny0bTfW4dRC0Gtxi5Cf/view?usp=sharing
 
+## SonarQube test coverage
+
+https://drive.google.com/file/d/15mxZ9DrQuuT4K-pl16ybPvLPKkCB9adq/view?usp=sharing
+
 ### Microservices
 
 * **Client:** Sends orders to restaurant, checks order and delivery status.
@@ -22,6 +26,7 @@ The microservices and EBS are Node JS API with express. To use install the follo
 * npm install body-parser --save
 * npm install axios --save
 * npm install randomstring --save
+* npm install jest --save
 
 # Services 
 
