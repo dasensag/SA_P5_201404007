@@ -4,20 +4,21 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "sonar":  "node sonar-project.js",
-    "test":  "jest --coverage"
+    "sonar": "node sonar-project.js",
+    "test": "jest",
+    "coverage": "jest --coverage"
   },
   "jest": {
-      "testEnvironment":  "node",
-      "coveragePathIgnorePatterns": [
-          "/node_modules/"
-      ],
-      "testResultsProcessor":  "jest-sonar-reporter"
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "testResultsProcessor": "jest-sonar-reporter"
   },
   "jestSonar": {
-      "reportPath":  "coverage",
-      "reportFile":  "test-reporter.xml",
-      "indent":  4
+    "reportPath": "coverage",
+    "reportFile": "test-reporter.xml",
+    "indent": 4
   },
   "author": "",
   "license": "ISC",
@@ -34,6 +35,7 @@
     "gulp-zip": "^5.0.2",
     "jest-sonar-reporter": "^2.0.0",
     "sonarqube-scanner": "^2.7.0",
+    "standard": "^14.3.4",
     "supertest": "^4.0.2"
   }
 }

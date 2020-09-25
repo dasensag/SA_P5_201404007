@@ -1,0 +1,5 @@
+node-test-app:
+  restart: always
+  image: node-test-app
+  build: ./node-test-app
+  container_name: node-test-app
